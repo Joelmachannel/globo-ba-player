@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Globo BA HD</title>
+  <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  <style>
+    body { margin: 0; background: #000; }
+    #player { width: 100%; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="player"></div>
+  <script>
+    new Clappr.Player({
+      source: "http://hls1.sua.tv/live/globotvbahiafhdbr2/s.m3u8",
+      parentId: "#player",
+      autoPlay: true,
+      mute: false,
+      width: "100%",
+      height: "100%",
+    });
+  </script>
+</body>
+</html>
